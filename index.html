@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>FAMILY BOOK</title>
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <img id="fam_img" src="https://www.barnesandnoble.com/blog/kids/wp-content/nas-uploads/sites/7/2017/05/TheFamilyBook.jpg">
+        <br>
+        <h5 id="fam_name">The Family Book</h5>
+        <br>
+        <button onclick="change();">Next</button>
+    </body>
+    <script>
+        var photo = ["https://www.kindpng.com/picc/m/36-365972_cartoon-boy-clipart-short-hair-boy-clipart-hd.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCWNt9mAyyhSSjuFvPgqC35txwRAH_n641_Q&usqp=CAU",
+        "https://www.how-to-draw-funny-cartoons.com/images/draw-a-grandma-001.jpg",
+        "https://www.how-to-draw-funny-cartoons.com/images/draw-a-grandpa-001.jpg",
+        "https://www.barnesandnoble.com/blog/kids/wp-content/nas-uploads/sites/7/2017/05/TheFamilyBook.jpg"
+        ];
+
+        var text = ["Krishna Sudarshan", "Krisha Sudarshan", "Sarla Sudarshan", "Ram Gambhir","The Family Book"];
+        var i=0;
+
+        function change(){
+            if(i == 5){
+                i=0;
+            }
+            document.getElementById("fam_img").src = photo[i]
+            document.getElementById("fam_name").innerHTML = text[i]
+            i++};
+
+    </script>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        img{
+            height: 300px;
+        }
+
+        button{
+            width: 75px;
+            height: 25px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            border-color: red;
+            color: red;
+        }
+    </style>
+</html>
